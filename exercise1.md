@@ -1,0 +1,6 @@
+I picked Java as my language of choice. For linting I could use SpotBugs, which uses static analysis to find bugs. 
+For testing the code I would use JUnit 5. Building in Java can be broken down into following steps: generating sources, compiling them, compiling test sources, executing tests, packaging, running health checks and finally generating reports.
+A lot of tools for Continuous Integration exist, more notable include CircleCi and TeamCity by JetBrains. CircleCi can be integrated with BitBucket, GitHub and GitHub Enterprise, while TEamCity runs in a Java environment and integrates with Visual Studio and other IDEs. 
+It provides integration with GitLab and BitBucket. One more noteworthy alternative is GitLab which provides tools for issue management, continuous integration and deployment, all within a single dashboard. the Community Edition is free to use.
+Almost definitely cloud-based solution would be better in this scenario. There is only six people involved with the code, therefore the scale of the project would not justify using self-hosted setups which are complicated to set up. 
+A cloud-based solution is much easier to set up and will probably work out to be cheaper. In my opinion, unless the team relies on some specific hardware resources or is extremely worried about security, it would be better to choose a cloud-based solution.
