@@ -68,7 +68,7 @@ jobs:
       - name: Slack Notify of Success
         uses: 8398a7/action-slack@v3
         with:
-          status: ${{ custom }}
+          status: custom
           fields: commit,author,took
           custom_payload: |
             {
