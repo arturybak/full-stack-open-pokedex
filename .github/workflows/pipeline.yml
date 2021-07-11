@@ -62,6 +62,7 @@ jobs:
         with:
           status: ${{ job.status }}
           fields: all
+          icon_emoji: ':octocat:'
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message, ' '), '#skip') && failure() }}
@@ -70,6 +71,7 @@ jobs:
         with:
           status: custom
           fields: commit,author,took
+          icon_emoji: ':octocat:'
           custom_payload: |
             {
               username: 'github-action',
