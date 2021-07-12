@@ -4,7 +4,9 @@ on:
   push:
     branches:
       - master
-
+# schedule:
+#     # * is a special character in YAML so you have to quote this string
+#     - cron:  '* 17 * * *'
 jobs:
   periodic_health_check:
     runs-on: ubuntu-18.04
@@ -13,7 +15,7 @@ jobs:
         uses: jtalk/url-health-check-action@v1.5
         with:
           # Check the following URL
-          url: https://warm-retreat-01394.herokuapp.com/fail
+          url: https://warm-retreat-01394.herokuapp.com/
           # Follow redirects, or just report success on 3xx status codes
           follow-redirect: no # Optional, defaults to "no"
           # Fail this action after this many failed attempts

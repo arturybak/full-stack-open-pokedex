@@ -9,7 +9,6 @@
     "test": "jest",
     "eslint": "eslint './**/*.{js,jsx}'",
     "eslint:fix": "eslint . --fix",
-
     "build": "webpack --mode production",
     "cypress:open": "cypress open",
     "test:e2e": "cypress run"

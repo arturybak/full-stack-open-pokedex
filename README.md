@@ -13,3 +13,7 @@ Start by running `npm install` inside the project folder
 `npm run eslint` to run eslint
 `npm run build` to make a production build
 `npm run start-prod` to run your production build
+
+## Other repository
+My repo for exercises 11.21 & 11.22 can be found here: https://github.com/arturybak/fullstackopen-bloglist-part11
+
